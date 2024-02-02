@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Lobster&family=Salsa&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(186, 223, 251);
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.main {
+    display: table;
+    width: 100%;
+    table-layout: auto;
+    border-spacing: 100%;
+    min-height:500px;
+}
+
+.bloque {
+    display: table-cell;
+}
+
+#primero {
+    margin-top: 5%;
+    width: 33%;
+    position: relative;
+    height: 100%;
+}
+
+#esquina-superior-a {
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 70%;
+    height: 70%;
+    transform: rotate(45deg);
+    background: rgb(223, 167, 24);
+    z-index: 1;
+}
+
+#esquina-superior-r {
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 65%;
+    height: 65%;
+    transform: rotate(45deg);
+    background: rgb(171, 33, 33);
+    z-index: 2;
+}
+
+#segundo {
+    width: 34%;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+    display: block;
+}
+
+#tercero {
+    width: 33%;
+    height: 100%;
+    position: relative;
+}
+
+
+#esquina-inferior-a {
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+    width: 70%;
+    height: 70%;
+    transform: rotate(45deg);
+    background: rgb(223, 167, 24);
+    z-index: 1;
+}
+
+#esquina-inferior-r {
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+    width: 65%;
+    height: 65%;
+    transform: rotate(45deg);
+    background: rgb(171, 33, 33);
+    z-index: 2;
+}
+
+
+#logo {
+    display: block;
+    position: absolute;
+    margin: 10px;
+    height: 10%;
+    z-index: 3;
+}
+
+.borde1 {
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(150, 32, 32);
+}
+
+.limite1 {
+    height: 15px;
+    border-left: 100px rgb(32, 126, 150);
+    background-color: rgb(150, 32, 32);
+    border-bottom: 10px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pantalla {
+    height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(32, 126, 150);
+}
+
+@media (max-width:768px) {
+
+    .pantalla {
+        height: 350px;
+    }
+
+    #primero {
+        width: 25%;
+    }
+
+    #segundo {
+        width: 45%;
+    }
+
+    #tercero {
+        width: 25%;
+    }
+
+    .pokemon-caja {
+        height: 40%;
+        width: 45%;
+    }
+
+    .pokemon-nombre{
+        font-size: 10px;
+    }
+
+    @media (max-height:768px) {
+        #esquina-inferior-a {
+            position: absolute;
+            bottom: -45%;
+            right: -45%;
+            width: 95%;
+            height: 95%;
+            transform: rotate(45deg);
+            background: rgb(223, 167, 24);
+            z-index: 1;
+        }
+        
+        #esquina-inferior-r {
+            position: absolute;
+            bottom: -45%;
+            right: -45%;
+            width: 90%;
+            height: 90%;
+            transform: rotate(45deg);
+            background: rgb(171, 33, 33);
+            z-index: 2;
+        }
+    }
+}
+
+@media (min-width:768px) { 
+
+    .pantalla {
+        height: 400px;
+    }
+
+    #primero {
+        width: 30%;
+    }
+
+    #segundo {
+        width: 40%;
+    }
+
+    #tercero {
+        width: 30%;
+    }
+
+    .pokemon-nombre{
+        font-size: 12px;
+    }
+
+
+    @media (min-height:768px) {
+        #esquina-inferior-a {
+            position: absolute;
+            bottom: -45%;
+            right: -45%;
+            width: 95%;
+            height: 95%;
+            transform: rotate(45deg);
+            background: rgb(223, 167, 24);
+            z-index: 1;
+        }
+        
+        #esquina-inferior-r {
+            position: absolute;
+            bottom: -30%;
+            right: -30%;
+            width: 90%;
+            height: 90%;
+            transform: rotate(45deg);
+            background: rgb(171, 33, 33);
+            z-index: 2;
+        }
+    }
+}
+
+@media (min-width:992px) { 
+
+    .pantalla {
+        height: 450px;
+    }
+
+    #primero {
+        width: 30%;
+    }
+
+    #segundo {
+        width: 40%;
+    }
+
+    #tercero {
+        width: 30%;
+    }
+
+    .pokemon-nombre{
+        font-size: 12px;
+    }
+
+
+    .pokemon-caja {
+        min-height: 120px;
+        min-width: 80px;
+    }
+
+    .pokemon-nombre{
+        font-size: 12px;
+    }
+
+        #esquina-inferior-a {
+            position: absolute;
+            bottom: -30%;
+            right: -30%;
+            width: 70%;
+            height: 70%;
+            transform: rotate(45deg);
+            background: rgb(223, 167, 24);
+            z-index: 1;
+        }
+        
+        #esquina-inferior-r {
+            position: absolute;
+            bottom: -30%;
+            right: -30%;
+            width: 65%;
+            height: 65%;
+            transform: rotate(45deg);
+            background: rgb(171, 33, 33);
+            z-index: 2;
+        }
+}
+
+@media (min-width:1200px) { 
+    .pantalla {
+        height: 500px;
+    }
+
+    #primero {
+        width: 33%;
+    }
+
+    #segundo {
+        width: 33%;
+    }
+
+    #tercero {
+        width: 33%;
+    }
+
+    .pokemon-caja {
+        min-height: 160px;
+    }
+
+    .pokemon-nombre{
+        font-size: 16px;
+    }
+
+    #esquina-inferior-a {
+        position: absolute;
+        bottom: -30%;
+        right: -30%;
+        width: 70%;
+        height: 70%;
+        transform: rotate(45deg);
+        background: rgb(223, 167, 24);
+        z-index: 1;
+    }
+    
+    #esquina-inferior-r {
+        position: absolute;
+        bottom: -30%;
+        right: -30%;
+        width: 65%;
+        height: 65%;
+        transform: rotate(45deg);
+        background: rgb(171, 33, 33);
+        z-index: 2;
+    }
+}
+
+.limite2 {
+    height: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 10px solid white;
+    background-color: rgb(150, 32, 32);
+}
+
+.borde2 {
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(150, 32, 32);
+}
+
+.pantalla-fondo {
+    display: flexbox;
+    align-content: center;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    background-color: rgba(73, 175, 200, 0.5);
+    z-index: 1;
+}
+
+.pantalla-contenido {
+    background-color: rgba(5, 79, 182, 0.411);
+    margin: auto;
+    height: 80%;
+    width: 90%;
+}
+
+.separador {
+    height: 4%;
+    width: 10px;
+}
+
+#buscador {
+    background-color: rgba(73, 175, 200, 0.503);
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    width: 75%;
+    height: 7%;
+    font-weight: bold;
+    font-size: 18px;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    color: rgb(0, 0, 0);
+    border-color: red;
+    font-family: 'Salsa', serif;
+    text-align: center;
+}
+
+#buscador::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.frontera {
+    position: relative;
+    overflow: hidden;
+}
+
+.arco {
+    position: absolute;
+    width: 20%;
+    height: 75%;
+    background: transparent;
+    border-radius: 50%;
+    border: 10px solid rgb(88, 8, 8);
+}
+
+#superior-izquierdo {
+    top: -40%;
+    left: -10%;
+}
+
+#superior-derecho {
+    top: -40%;
+    right: -10%;
+}
+
+#circulo1 {
+    position: absolute;
+    background-color: white;
+    height: 60%;
+    width: 30%;
+    border-radius: 5rem 5rem 0 0;
+    z-index: 2;
+    left: 35%;
+    bottom: 0%;
+}
+
+#circulo1-interior {
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    height: 80%;
+    width: 80%;
+    border-radius: 5rem 5rem 0 0;
+    z-index: 2;
+    left: 10%;
+    bottom: 0%;
+}
+
+#inferior-izquierdo {
+    bottom: -40%;
+    left: -10%;
+}
+
+#inferior-derecho {
+    bottom: -40%;
+    right: -10%;
+}
+
+#circulo2 {
+    position: absolute;
+    background-color: white;
+    height: 60%;
+    width: 30%;
+    border-radius: 0 0 5rem 5rem;
+    z-index: 2;
+    right: 35%;
+    top: 0%;
+}
+
+
+#circulo2-interior {
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    height: 80%;
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
+    z-index: 2;
+    right: 10%;
+    top: 0%;
+}
+
+#fondo-circulo1 {
+    position: absolute;
+    background-color: rgb(94, 223, 255);
+    opacity: 60%;
+    height: 60%;
+    width: 60%;
+    border-radius: 5rem 5rem 0 0;
+    z-index: 2;
+    left: 20%;
+    bottom: 0%;
+}
+
+#fondo-circulo2 {
+    position: absolute;
+    background-color: rgb(94, 223, 255);
+    opacity: 60%;
+    height: 60%;
+    width: 60%;
+    border-radius: 0 0 5rem 5rem;
+    z-index: 2;
+    right: 20%;
+    top: 0%;
+}
+
+.pantalla-contenido {
+    overflow-y: auto; 
+    text-align: center;
+    vertical-align: bottom;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.pantalla-contenido::-webkit-scrollbar { 
+    display: none;  
+}
+
+.pokemon-caja {
+    position: relative;
+    border-radius: 15%;
+    color: rgb(0, 0, 0);
+    display: flexbox;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;/* Esta ayuda a que la separación de abajo se vea bien, pero  checar que queden bien las letras de abajo*/
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width: 80%; 
+    background: rgb(246, 186, 90);
+    font-family: 'Salsa', serif;
+    font-weight: bold;
+    min-height: 160px;
+}
+
+.numero-tarjeta {
+    height: 5%;
+    margin: 0;
+}
+
+.imagen-tarjeta {
+    border-radius: 15%;
+    position: relative;
+    background-color: rgba(255, 237, 216, 0.609);
+    height: 60%;
+    width: 100%;
+    z-index: 999;
+}
+
+.pokemon-img {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    width: 70%;
+    height: 70%;
+}
+
+.pokemon-id {
+    height: 1%;
+    font-size: 14px;
+    width: auto;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.pokemon-nombre {
+    margin-top: 0px;
+}
+
+.pokemon-nombre::first-letter {
+    text-transform: capitalize;
+  }
+
+#busqueda-fallida {
+    width: 100%;
+    z-index : 100;
+    align-items: center;
+    font-family: 'Salsa', serif;
+}
+
+#detalles-pokemon {
+    width: 100%;
+    background-color: blue;
+    z-index: 10;
+}
+
+#boton-regresar {
+    width: 10%;
+    text-align: left;
+    margin-right: 80%;
+    margin-top: 5%;
+}
+
+.imagen-stats {
+    display: box;
+    vertical-align: center;
+    height: 40%;
+    width: 40%;
+}
+
+.stats {
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+    
+}
+
+.stats li {
+    font-size: 20px;
+}
+
+.nombre-stats {
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura automatica */
+    height: auto;
+}
+
+#stats-id {
+    padding-right: 5%;
+}
